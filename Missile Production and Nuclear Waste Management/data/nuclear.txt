@@ -1,0 +1,138 @@
+outfit "Nuclear Byproduct"
+	category "Special"
+	cost -500
+	thumbnail "outfit/nuclearwaste"
+	"mass" 1
+	"energy generation" -0.05
+	description "Created by all sorts of fission reactors. Spaceports have a service to remove them from your ship to be sent to waste management facilities, however you are charged for it. Although the byproducts are encased in a thick lead shell, the shell itself drains power for extra shielding against the radioactivity within for safety measures. It includes radioactive compounds like plutonium-239 which can be re-enriched as fuel or made into nuclear weapon."
+	
+mission "Fission Byp"
+	landing
+	name "Fbp"
+	repeat
+	invisible
+	to offer
+	destination
+		government Republic "Free Worlds" Syndicate Neutral Alpha Coalition Deep Hai "Hai (Unfettered)" Heliarch Independent "Indigenous Lifeform" Korath Kor Efret Kor Mereti Kor Sestor Merchant Militia Navy Intelligence "Navy (Oathkeeper)" Pirate Pug Quarg Remnant "Syndicate (Extremist)" "Wanderer" "Uninhabited"
+	
+	on offer
+	    require "Fission Reactor"
+        
+	on accept
+	    outfit "Nuclear Byproduct" +2
+		set "Nuclear Byp: complete"
+		
+mission "Dwarf Byp"
+	landing
+	name "Dbp"
+	repeat
+	invisible
+	to offer
+	destination
+		government Republic "Free Worlds" Syndicate Neutral Alpha Coalition Deep Hai "Hai (Unfettered)" Heliarch Independent "Indigenous Lifeform" Korath Kor Efret Kor Mereti Kor Sestor Merchant Militia Navy Intelligence "Navy (Oathkeeper)" Pirate Pug Quarg Remnant "Syndicate (Extremist)" "Wanderer" "Uninhabited"
+	
+	on offer
+	    require "Dwarf Core"
+        
+	on accept
+	    outfit "Nuclear Byproduct" +1
+		set "Dwarf Byp: complete"
+		
+mission "Stack Byp"
+	landing
+	name "Sbp"
+	repeat
+	invisible
+	to offer
+	destination
+		government Republic "Free Worlds" Syndicate Neutral Alpha Coalition Deep Hai "Hai (Unfettered)" Heliarch Independent "Indigenous Lifeform" Korath Kor Efret Kor Mereti Kor Sestor Merchant Militia Navy Intelligence "Navy (Oathkeeper)" Pirate Pug Quarg Remnant "Syndicate (Extremist)" "Wanderer" "Uninhabited"
+	
+	on offer
+	    require "Stack Core"
+        
+	on accept
+	    outfit "Nuclear Byproduct" +2
+		set "Stack Byp: complete"
+		
+mission "Breeder Byp"
+	landing
+	name "Bbp"
+	repeat
+	invisible
+	to offer
+	destination
+		government Republic "Free Worlds" Syndicate Neutral Alpha Coalition Deep Hai "Hai (Unfettered)" Heliarch Independent "Indigenous Lifeform" Korath Kor Efret Kor Mereti Kor Sestor Merchant Militia Navy Intelligence "Navy (Oathkeeper)" Pirate Pug Quarg Remnant "Syndicate (Extremist)" "Wanderer" "Uninhabited"
+	
+	on offer
+	    require "Breeder Reactor"
+        
+	on accept
+	    outfit "Nuclear Byproduct" +1
+		set "Stack Byp: complete"
+		
+outfit "Dwarf Core"
+	category "Power"
+	cost 800000
+	thumbnail "outfit/dwarf core"
+	"mass" 36
+	"outfit space" -36
+	"energy generation" 4.8
+	"heat generation" 14
+	description "1 container of nuclear waste created till next landing."
+
+outfit "Fission Reactor"
+	category "Power"
+	cost 1500000
+	thumbnail "outfit/fission"
+	"mass" 65
+	"outfit space" -65
+	"energy generation" 9.4
+	"heat generation" 25
+	description "2 containers of nuclear waste created till next landing."
+
+outfit "Breeder Reactor"
+	category "Power"
+	cost 2500000
+	thumbnail "outfit/breeder"
+	"mass" 80
+	"outfit space" -80
+	"energy generation" 12.8
+	"heat generation" 35
+	description "1 container of nuclear waste created till next landing."
+
+outfit "Stack Core"
+	category "Power"
+	cost 4500000
+	thumbnail "outfit/stack core"
+	"mass" 140
+	"outfit space" -140
+	"energy generation" 22.9
+	"heat generation" 55
+	description "4 containers of nuclear waste created till next landing."
+
+outfit "Nuclear Warhead
+     category "Special"
+	  cost 995000
+	  thumbnail "outfit/warhead"
+	  "mass" 5
+	  description "The encased bomb's itself. It needs to be attached to a missile to be delivered.
+	  
+
+	
+mission "Republic Radioactive Waste"
+	name "Radioactive Wastes to <planet>"
+	job
+	repeat
+	description "Republic Nuclear Waste Management Facility in <destination> accepts 6 containers of nuclear waste from any pilot. Payment for your trobles is 300.000 credits."
+	to offer
+	    has "Nuclear Byproduct" 1
+	source
+		government "Republic"
+	destination
+		distance 2 4
+		government "Republic"
+	on complete
+	    outfit "Nuclear Byproduct" -6
+		payment 24000
+		dialog "The waste is delivered and you are paid."
+		

@@ -1,0 +1,12 @@
+ship "Bulk Freighter" "Bulk Freighter (Nuclear Cargo)"
+	outfits
+		"Fusion Reactor"
+		"Fission Reactor"
+		"LP072a Battery Pack"
+		"S-970 Regenerator" 3
+		"Liquid Helium Cooler" 2
+		"Outfits Expansion" 10
+		"A250 Atomic Thruster"
+		"A375 Atomic Steering"
+		"Hyper Drive"
+		"Nuclear Warhead" 10

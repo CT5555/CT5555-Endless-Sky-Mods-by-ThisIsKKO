@@ -1,0 +1,159 @@
+outfit "Meteor Raw Parts"
+    plural "Meteor Raw Parts"
+	category "Special"
+	cost 800
+	thumbnail "outfit/missileparts"
+	"mass" 1
+	"Meteor Part Capacity" -1
+	description "Includes various ores like iron, neodymium, aluminum and lead. Manufacturing is nearly 12 times cheaper than buying the missiles."
+
+outfit "Torpedo Raw Parts"
+    plural "Torpedo Raw Parts"
+	category "Special"
+	cost 50
+	thumbnail "outfit/missileparts"
+	"mass" 1
+	"Torpedo Part Capacity" -1
+	description "Includes various ores like iron, neodymium, tungsten and lead. Manufacturing is nearly 20 times cheaper then buying the missiles."
+	
+outfit "Sidewinder Raw Parts"
+    plural "Sidewinder Raw Parts"
+    category "Special"
+	cost 10000
+	thumbnail "outfit/missileparts"
+	"mass" 1
+	"Sidewinder Part Capacity" -1
+	description "Includes various ores like iron, neodymium, magnesium and lead. Due to Lovelace Labs' policies, manufacturing cost is not lower than buying it. But the plant occupies less room and utilizes the heat produced by the ship as energy. Selling the missiles will result in deficit."
+
+outfit "Javelin Raw Parts"
+    plural "Javelin Raw Parts"
+    category "Special"
+	cost 250
+	thumbnail "outfit/missileparts"
+	"mass" 1
+	"Javelin Part Capacity" -1
+	description "Includes ores like iron, lead and magnesium. Since Javelins are mostly used in small ships, production plant looks like a small unshaped chunk of metal and easy to fit. Manufacturing is 5 times cheaper but requires great cooling."
+
+outfit "Meteor Missile Assembler"
+	category "Systems"
+	cost 450000
+	thumbnail "outfit/meteorplant"
+	"mass" 19
+	"outfit space" -19
+	"Meteor Part Capacity" 25
+	"meteor capacity" 20
+	"energy generation" -1.2
+	"heat generation" 1.5
+	unplunderable 1
+	description "Produces 20 meteor missiles till your next landing. Requires 1 ton of the respective raw parts cargo per queue. Excessive yield will be stored in cargo. So keep track of them. Only avaliable for the Flag Ship. Lore: With the overwhelming demands on certain ammunitions, engineers working for the Republic has started developing miniaturized ateliers that will utilize modest amount of energy and space."
+	
+mission "Missile Production"
+	landing
+	name "Mis"
+	repeat
+	invisible
+	to offer
+	destination
+		government Republic "Free Worlds" Syndicate Neutral Alpha Coalition Deep Hai "Hai (Unfettered)" Heliarch Independent "Indigenous Lifeform" Korath Kor Efret Kor Mereti Kor Sestor Merchant Militia Navy Intelligence "Navy (Oathkeeper)" Pirate Pug Quarg Remnant "Syndicate (Extremist)" "Wanderer" "Uninhabited"
+	
+	on offer
+	    require "Meteor Missile Assembler"
+		require "Meteor Raw Parts"
+        
+	on accept
+	    outfit "Meteor Raw Parts" -1
+	    outfit "Meteor Missile" +20
+		set "Missile Production: complete"
+		
+outfit "Torpedo Minifactory"
+    category "Systems"
+	cost 1200000
+	thumbnail "outfit/torpedoplant"
+	"mass" 28
+	"outfit space" -28
+	"Torpedo Part Capacity" 80
+	"torpedo capacity" 15
+	"energy generation" -2
+	"heat generation" 3.5
+	unplunderable 1
+	description "Produces 15 torpedoes till your next landing. Requires 5 tons of the respective raw parts per queue. Excessive yield will be stored in cargo. So keep track of them. Only avaliable for the Flag Ship. Lore: With the overwhelming demands on certain ammunitions, engineers working for the Republic has started developing miniaturized ateliers that will utilize modest amount of energy and space."
+	
+mission "Torpedo Production"
+	landing
+	name "Tor"
+	repeat
+	invisible
+	to offer
+	destination
+		government Republic "Free Worlds" Syndicate Neutral Alpha Coalition Deep Hai "Hai (Unfettered)" Heliarch Independent "Indigenous Lifeform" Korath Kor Efret Kor Mereti Kor Sestor Merchant Militia Navy Intelligence "Navy (Oathkeeper)" Pirate Pug Quarg Remnant "Syndicate (Extremist)" "Wanderer" "Uninhabited"
+	
+	on offer
+	    require "Torpedo Minifactory"
+		require "Torpedo Raw Parts"
+        
+	on accept
+	    outfit "Torpedo Raw Parts" -5
+	    outfit "Torpedo" +15
+		set "Torpedo Production: complete"
+		
+outfit "Sidewinder Missile Assembler"
+    category "Systems"
+	cost 520000
+	thumbnail "outfit/sidewinderplant"
+	"mass" 16
+	"outfit space" -16
+	"Sidewinder Part Capacity" 40
+	"sidewinder capacity" 25
+	"energy generation" -2
+    "heat generation" 5
+	unplunderable 1
+	description "Produces 25 sidewinder missiles till your next landing. Requires 2 tons of the respective raw parts per queue. Excessive yield will be stored in cargo. So keep track of them. Only avaliable for the Flag Ship. Lore: For the sake of the heating competition, engineers working for the Lovelace Labs designed a mountable manufactory for their own missiles."	 
+
+mission "Sidewinder Production"
+	landing
+	name "Sid"
+	repeat
+	invisible
+	destination
+		government Republic "Free Worlds" Syndicate Neutral Alpha Coalition Deep Hai "Hai (Unfettered)" Heliarch Independent "Indigenous Lifeform" Korath Kor Efret Kor Mereti Kor Sestor Merchant Militia Navy Intelligence "Navy (Oathkeeper)" Pirate Pug Quarg Remnant "Syndicate (Extremist)" "Wanderer" "Uninhabited"
+	
+	on offer
+	    require "Sidewinder Missile Assembler"
+		require "Sidewinder Raw Parts"
+        
+	on accept
+	    outfit "Sidewinder Raw Parts" -2
+	    outfit "Sidewinder Missile" +25
+		set "Sidewinder Production: complete"
+		
+outfit "Javelin Assembler"
+    category "Systems"
+	cost 76000
+	thumbnail "outfit/javelinplant"
+	"mass" 10
+	"outfit space" -10
+	"Javelin Part Capacity" 30
+	"javelin capacity" 80
+	"energy generation" -0.3
+	"heat generation" 8
+	unplunderable 1
+	description "Produces 80 javelin missiles till your next landing. Requires 2 tons of the respective raw parts per queue. Excessive yield will be stored in cargo. So keep track of them. Only avaliable for the Flag Ship. Lore: In order to guarantee the success of their raids against merchant fleets, a few pirate techies tore apart a few salvage parts and put them together to form whatever this be... (It's a miracle this thing won't overheat and shutdown.)"
+	
+mission "Javelin Production"
+	landing
+	name "Jav"
+	repeat
+	invisible
+	to offer
+	destination
+		government Republic "Free Worlds" Syndicate Neutral Alpha Coalition Deep Hai "Hai (Unfettered)" Heliarch Independent "Indigenous Lifeform" Korath Kor Efret Kor Mereti Kor Sestor Merchant Militia Navy Intelligence "Navy (Oathkeeper)" Pirate Pug Quarg Remnant "Syndicate (Extremist)" "Wanderer" "Uninhabited"
+	
+	on offer
+	    require "Javelin Assembler"
+		require "Javelin Raw Parts"
+        
+	on accept
+	    outfit "Javelin Raw Parts" -2
+	    outfit "Javelin" +80
+		set "Javelin Production: complete"
+		
