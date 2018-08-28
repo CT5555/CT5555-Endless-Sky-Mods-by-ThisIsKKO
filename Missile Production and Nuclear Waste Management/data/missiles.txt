@@ -104,8 +104,6 @@ outfit "Sidewinder Missile Assembler"
 	"outfit space" -16
 	"Sidewinder Part Capacity" 40
 	"sidewinder capacity" 25
-	"energy generation" -2
-    "heat generation" 5
 	unplunderable 1
 	description "Produces 25 sidewinder missiles till your next landing. Requires 2 tons of the respective raw parts per queue. Excessive yield will be stored in cargo. So keep track of them. Only avaliable for the Flag Ship. Lore: For the sake of the heating competition, engineers working for the Lovelace Labs designed a mountable manufactory for their own missiles."	 
 
