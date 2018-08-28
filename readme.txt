@@ -9,7 +9,7 @@ that sorf of thing.
 
 
 --EVENTS.TXT/POWER.TXT--
-Events.txt handles the multiple fuel consumption scenarios of different generators together. If you have 2 different
+Events.txt handles the multiple fuel consumption scenarios of different generators alone or together. If you have 2 different
 "Diesel Generators" for example, that consumes "4 and 7 fuel canisters" each, normally you need to make 2 different events 
 where "Diesel Generator-A" will eat up 4 while "Diesel Generator-B" will eat up "7 fuel canisters" every time you land
 and take off. However when you install them both, you need to make a specific event where it requires both as outfits
