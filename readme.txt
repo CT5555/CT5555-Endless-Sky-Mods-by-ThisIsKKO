@@ -14,7 +14,7 @@ Events.txt handles the multiple fuel consumption scenarios of different generato
 where "Diesel Generator-A" will eat up 4 while "Diesel Generator-B" will eat up "7 fuel canisters" every time you land
 and take off. However when you install them both, you need to make a specific event where it requires both as outfits
 and will eat up 11 fuel canisters. Otherwise, you will end up consuming total value of 7 for both of the generators. Installing
-multiple numbers of the same generator consumes it's double value, **but I'm not sure.** In that case, every ship 
+multiple numbers of the same generator consumes it's double value, **but I may not be right.** In that case, every ship 
 in the game was to be given "Generator Installment Allowance" outfit so that a player may install one generator
 at a time. That takes away the ability of installing more than 1 generator of any kind. However in power.txt, only
 "Fusion Reactor" requires it since some generators like "Nuclear Fission Reactor MK-I" has more than 2 capacity modifiers.
