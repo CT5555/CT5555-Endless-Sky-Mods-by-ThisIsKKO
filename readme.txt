@@ -4,7 +4,7 @@ If I ever to publish the full mod, this is the name I picked. Almost none of the
 
 --MAP.TXT&MISSION.TXT--
 Map.txt includes a custom space station that I added although it worked at first glance, it didn't appear after
-I modified it a little. And mission.txt has a few dialogueS which are probably sloppy since I'm not really good at 
+I modified it a little. And mission.txt has a few dialogues which are probably sloppy since I'm not really good at 
 that sorf of thing. 
 
 
