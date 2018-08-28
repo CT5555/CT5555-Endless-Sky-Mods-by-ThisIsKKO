@@ -1,0 +1,67 @@
+mission "Nuclear Vespene"
+    landing
+	name "WelcometoVespene"
+	source
+		planet "Theta Vespene"
+	to offer
+		random < 99
+	
+	on offer
+		conversation
+			`As soon as you dock and open your hatch, 3 officers meet you with a team of security guards.One of them scans you and your ship for paranormal radioactivity or explosives. One male officer starts talking to you:`
+			`"Welcome to Theta Vespene NRS, Captain <first>. As you can see, we have to keep this place under strict oversight."`
+			choice	
+				`	"You have one tight supervision here."`
+				    goto short1
+				`	"Why all this effort? I am a simple merchant who has come to install a decent Nuclear Reactor..."`
+			        goto explain1
+			label short1
+			`   "All for a necessary reason Captain. Any negligence can lead to a catastrophic tragedy."`
+			    goto positive1
+			label explain1
+			`   "It doesn't matter whether you are a merchant or even from the Navy. One small radiation leakage or a security breach can lead to the destruction of this facility. Not to mention our proximity to the planet Rand. So I expect you to be in your best behaviour, understood?`
+			    goto tight1
+			label positive1
+			`   "I see what you mean sir." you say. Once they finish up, they distribute radiation proof suits to you and your crew.`
+			    accept
+			label tight1
+			`   "Yes sir, crystal clear." you say. Once they are done, the officers distribute protective suits to you and your crew.`
+			    accept
+				
+mission "Build A Station"
+	description "Build your first station."
+	source
+		government Republic "Free Worlds" Syndicate Neutral
+	destination "New Boston"
+	job
+	clearance
+	to offer
+		random < 99
+	on fail
+		dialog `You have failed to build the Station.`
+	
+	on complete
+		payment -50000
+		event "Construction of Stella"
+		"salary: Owned Planets" += 100000
+		
+		
+event "Construction of Stella"
+    system Rutilicus
+		object "Stella Station"
+			sprite planet/station3kd
+			distance 3042.95
+			period 2672.25
+    planet "Stella Station"
+		attributes "dirt belt" textiles farming
+		landscape land/station0
+		music ambient/machinery
+		description `Stella Station is seven centuries old; it was the first space station built outside of the Sol system. The station has been modified and repaired so often since that time that in all likelihood not a single deck panel or bulkhead that was part of the original station remains. Four centuries ago it was nearly destroyed by an asteroid impact, but other than that it has been a working deuterium refinery for its entire lifetime.`
+		spaceport `The main ring of the station consists of three different levels, with living quarters, repair shops, a few small cafeterias, and even a barber. The lower levels also house some of the refinery equipment, but much of the harvesting is done automatically by robotic drones. For a station that is so old, everything feels surprisingly sturdy; the bolts and beams that make up the station are much thicker than they probably need to be.`
+		shipyard "Basic Ships"
+	    outfitter "Basic Outfits"
+		outfitter "Ammo South"
+		security 0.3
+		tribute 500
+			threshold 3500
+			fleet "Small Syndicate" 7

@@ -1,0 +1,18 @@
+mission "Missile Production"
+	landing
+	name "Mis"
+	repeat
+	invisible
+	to offer
+	destination
+		government Republic "Free Worlds" Syndicate Neutral
+	on enter destination
+	    require "Missile Atelier"
+		require "Lead"
+		require "Iron"
+
+	on accept
+	     outfit "Meteor Missile" +10
+		 outfit "Lead" -1
+		 outfit "Iron" -1
+		 set "Missile Production: complete"

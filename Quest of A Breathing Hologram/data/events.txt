@@ -1,0 +1,211 @@
+mission "Fuel Tax"
+	landing
+	name "Nay"
+	repeat
+	invisible
+	to offer
+		not "Fuelo: active"
+		not "Taxi: active"
+		not "Fuel Tax1: active"
+		not "Fuel Tax2: active"
+	on offer
+	    require "aXXXVI-Diesel Generator"
+
+	on accept
+	     outfit "Diesel Tank" -6
+		 set "Fuel Tax: complete"
+		 
+		 
+mission "Fuel Tax1"
+	landing
+	name "Nay1"
+	repeat
+	invisible
+	to offer
+		not "Taxi: active"
+	on offer
+	    require "aXXXVI-Diesel Generator"
+		require "bLX-Diesel Generator"
+
+	on accept
+	     outfit "Diesel Tank" -7
+		 set "Fuel Tax1: complete"
+		 set "Fuel Tax: complete" 
+		 set "Fuel Tax2: complete"
+		 set "Fuelo: complete"
+		 
+mission "Fuel Tax2"
+	landing
+	name "Nay2"
+	repeat
+	invisible
+	to offer
+		not "Fuelo: active"
+	on offer
+	    require "aXXXVI-Diesel Generator"
+		require "gC-Diesel Generator"
+
+	on accept
+	     outfit "Diesel Tank" -10
+		 set "Fuel Tax2: complete"
+		 set "Fuel Tax: complete" 
+		 set "Taxi: complete"
+		 set "Fuel Tax3: complete"
+		 set "Fuel Tax1: complete" 
+		 
+mission "Fuel Tax3"
+	landing
+	name "Nay3"
+	repeat
+	invisible
+	to offer
+		not "Fuel Tax: active"
+	on offer
+	    require "bLX-Diesel Generator"
+		require "gC-Diesel Generator"
+
+	on accept
+	     outfit "Diesel Tank" -10
+		 set "Fuel Tax3: complete"
+		 set "Fuel Tax1: complete" 
+		 set "Fuel Tax2: complete" 
+		 set "Fuel Tax: complete" 
+		 set "Fuelo: complete" 
+		 set "Taxi: complete"
+		
+mission "Fuelo"
+	landing
+	name "Mon"
+	repeat
+	invisible
+	to offer
+		not "Fuel Tax: active"
+		not "Taxi: active"
+	on offer
+		require "bLX-Diesel Generator"
+				
+	on accept
+	     outfit "Diesel Tank" -7
+		 set "Fuelo: complete"
+		 
+mission "Taxi"
+	landing
+	name "Som"
+	repeat
+	invisible
+	to offer
+		not "Fuel Tax: active"
+		not "Fuelo: active"
+	on offer
+		require "gC-Diesel Generator"
+				
+	on accept
+	     outfit "Diesel Tank" -10
+		 set "Taxi: complete"
+		 
+mission "Uro"
+	landing
+	name "U"
+	repeat
+	invisible
+	to offer
+		not "Uro2: active"
+		not "Uro3: active"
+	on offer
+	    require "Nuclear Fission Reactor MK-I"
+				
+	on accept
+	     outfit "Uranium Rod" -1
+		 set "Uro: complete"
+		    
+		
+mission "Uro2"
+	landing
+	name "Uy"
+	repeat
+	invisible
+	to offer
+	on offer
+		require "Nuclear Fission Reactor MK-II"
+				
+	on accept
+	     outfit "Solarnuclear Fuel Rod" -2
+		 set "Uro2: complete"
+		 
+mission "Uro3"
+	landing
+	name "Ut"
+	repeat
+	invisible
+	to offer
+		not "Uro: active"
+		not "Uro2: active"
+	on offer
+		require "Nuclear Fission Reactor MK-III"
+				
+	on accept
+	     outfit "Uranium Rod" -4
+		 set "Uro3: complete"
+		 
+mission "LNC"
+	landing
+	name "LNC1"
+	repeat
+	invisible
+	on offer
+	    require "Liquid Nitrogen Cooling System"
+				
+	on accept
+	     outfit "Nitrogen Coolant Cell" -1
+		 set "LNC: complete"
+		 
+mission "LNeC"
+	landing
+	name "LNeC1"
+	repeat
+	invisible
+	on offer
+	    require "Liquid Neon Cooling System"
+				
+	on accept
+	     outfit "Neon Coolant Cell" -1
+		 set "LNeC: complete"
+		 
+mission "H20"
+	landing
+	name "H201"
+	repeat
+	invisible
+	on offer
+	    require "H2O Coolant System"
+				
+	on accept
+	     outfit "Pressurized Water Cell" -3
+		 set "H2O: complete"
+		 
+		 
+mission "Helio"
+	landing
+	name "Helio1"
+	repeat
+	invisible
+	on offer
+	    require "Liquid Helium Cooling System"
+				
+	on accept
+	     outfit "Helium Coolant Cell" -1
+		 set "Helio: complete"
+
+		 
+mission "FusionI"
+    landing
+	name "Fusion"
+	repeat
+	invisible
+	on offer
+	    require "Nuclear Fusion Reactor"
+
+    on accept
+	     outfit "Helium Filament" -5
+		 set "Fusion: complete"
+		 

@@ -1,0 +1,196 @@
+outfit "aXXXVI-Diesel Generator"
+	category "Power"
+	cost 26000
+	thumbnail "outfit/tiny fuel cell"
+	"Diesel Tank Capacity" 36
+	"mass" 18
+	"outfit space" -18
+	description "--- Fuel Consumtion Per Landing: 6  Back then when humans first invented the ancient automobiles, they used diesel combustion engines to operate them.Even though there are more efficient ways to fire up your engines, this piece of technology is still kicking. "
+
+	
+outfit "Diesel Tank"
+    category "Special"
+	cost 430
+	thumbnail "outfit/fuel pod"
+	"Diesel Tank Capacity" -1
+	"energy generation" 0.19
+	"heat generation" 0.26
+	description "Necessary fuel needed to create combustion for your ship's diesel generators. Always remember to refuel after take off since combustion process is more powerful when all the tanks are full. "
+	
+
+outfit "bLX-Diesel Generator"
+	category "Power"
+	cost 78000
+	thumbnail "outfit/medium fuel cell"
+	"Diesel Tank Capacity" 60
+	"mass" 27
+	"outfit space" -27
+	description "--- Fuel Consumtion Per Landing: 7  Back then when humans first invented the ancient automobiles, they used diesel combustion engines to operate them.Even though there are more efficient ways to fire up your engines, this piece of technology is still kicking. "
+	
+	
+outfit "gC-Diesel Generator"
+	category "Power"
+	cost 234000
+	thumbnail "outfit/huge fuel cell"
+	"Diesel Tank Capacity" 100
+	"mass" 36
+	"outfit space" -36
+	description "--- Fuel Consumtion: 10  Back then when humans first invented the ancient automobiles, they used diesel combustion engines to operate them.Even though there are more efficient ways to fire up your engines, this piece of technology is still kicking. "
+	
+	
+outfit "Nuclear Fission Reactor MK-I"
+    category "Power"
+	cost 749000
+	thumbnail "outfit/small nucleovoltaic"
+	"Uranium Rod Slots" 14
+	"Nitrogen Coolant Cell Slots" 8
+	"heat generation" 30
+	"mass" 76
+	"outfit space" -76
+	description "MK-I reactor has it's self-cooling system running on nitrogen coolant cells, which saves you from using extra outfit space.But it's capacity to process fission is reduced due to this feature."
+	
+	
+outfit "Nuclear Fission Reactor MK-II"
+    category "Power"
+	cost 749000
+	thumbnail "outfit/small nucleovoltaic"
+	"Solarnuclear Fuel Rod" 14
+	"heat generation" 17
+	"mass" 76
+	"outfit space" -76
+	description "MK-II reactor has a fission process constantly enriched by deuterium that enables it to release more energy from nuclear rods."
+	
+	
+outfit "Nuclear Fission Reactor MK-III"
+    category "Power"
+	cost 749000
+	thumbnail "outfit/small nucleovoltaic"
+	"Uranium Rod Slots" 42
+	"heat generation" 24
+	"mass" 110
+	"outfit space" -110
+	description "Technology at the dawn of 3rd industrial revolution, nuclear fission still keeps it's respective place on energy market."
+	
+
+outfit "Uranium Rod"
+    category "Special"
+	cost 6300
+	"Uranium Rod Slots" -1
+	"energy generation" 1.8
+    description "All NFRs run on this fuel.For Nuclear Fission again the more rods the better generation. It lasts much longer than diesel but it's uncommon, which means it's avaliable on only certain spaceports."
+	
+	
+outfit "Solarnuclear Fuel Rod"
+    category "Power"
+	cost 7800
+	"Solarnuclear Rod Slots" -1
+	"solar collection" 1.1
+	"energy generation" 1.8
+    description "A special type of nuclear fuel that has an increased fission energy outcome upon being infused with deuterium from nearby stars."
+	
+	
+outfit "Generator Installment Allowance"
+    category "Special"
+	cost 0
+	thumbnail "outfit/license"
+	"Generator Capacity" 1
+	"installable" -1
+	description "To be abled to install fuel running generators, you need this license."
+	
+	
+outfit "Nitrogen Coolant Cell"
+    category "Special"
+	cost 1050
+	thumbnail "outfit/nitrogen1"
+	"Nitrogen Coolant Cell Slots" -1
+	"cooling" 7
+	description "Vital compound for the Liquid Nitrogen Cooling System. They are easily accesible throughout the human space."
+	
+
+	
+outfit "Neon Coolant Cell"
+    category "Special"
+	cost 1950
+	thumbnail "outfit/neon"
+	"Neon Coolant Cell Slots" -1
+	"cooling" 10
+	description "Vital compound for the Liquid Neon Cooling System. Moderately difficult to come by."
+	
+	
+outfit "Pressurized Water Cell"
+    category "Special"
+	cost 200
+	thumbnail "outfit/watertank"
+	"cooling" 2.8
+	description "Vital compound for the H2O Coolant System. They are more than abundant throughout the human space."
+
+	
+	
+outfit "Helium Coolant Cell"
+    category "Special"
+	cost 3450
+	thumbnail "outfit/heliumcool"
+	"Helium Coolant Cell Slots" -1
+	"cooling" 18
+	description "Vital compound for the Liquid Neon Cooling System. Only produced in eligible facilities."
+	
+	
+outfit "Nuclear Fusion Reactor"
+    category "Power"
+	cost 1500000
+	thumbnail "outfit/fusion"
+	"Helium Filament Slots" 1000
+	"Generator Capacity" -1
+	"heat generation" 170
+	"mass" 148
+	"outfit space" -148
+	description "Hundreds of mini artificial suns in the hull. Their incandascense and scorching heat is what keeps you alive on your ship."
+	
+	
+outfit "Helium Filament"
+    category "Special"
+    cost 4000
+	"Helium Filament Slots" -1
+	"energy generation" 0.06
+    description "Necessary compound for fusion chain."
+	
+
+outfit "H2O Coolant System"
+    category "Systems"
+	cost 52000
+	thumbnail "outfit/watercool"
+	"Water Cell Slots" 30
+	"mass" 13
+	"outfit space" -13
+    description "Cell Consumption: 3"
+	
+
+	outfit "Liquid Nitrogen Cooling System"
+    category "Systems"
+	cost 82000
+	thumbnail "outfit/nitrogencool"
+	"Nitrogen Coolant Cell Slots" 14
+	"mass" 24
+	"outfit space" -24
+    description "Cell Consumption: 2"
+	
+	
+outfit "Liquid Neon Cooling System"
+    category "Systems"
+	cost 95250
+	thumbnail "outfit/neoncool"
+	"Neon Coolant Cell Slots" 14
+	"mass" 29
+	"outfit space" -29
+    description "Cell Consumption: 1"
+	
+	
+outfit "Liquid Helium Cooling System"
+    category "Systems"
+	cost 121500
+	thumbnail "outfit/heliumcooler"
+	"Helium Coolant Cell Slots" 14
+	"mass" 51
+	"outfit space" -51
+	description "Cell Consumption: 1" 
+	 
