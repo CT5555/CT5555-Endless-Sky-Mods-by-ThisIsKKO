@@ -31,11 +31,11 @@ In it's most basic form, the generators only produce heat and the fuels have the
 you can't install the fuels and I made the power generation values greater than the vanilla ones since otherwise you 
 would have no reason to install them to pay for the fuels. Since generators will consume fuels, every time you land
 and take off, your power generation over time will be crippled and you need to manually purchase the corresponding fuels
-from the outfit store. I wanted to add a feature where the game asks player to automatically replenish the missing fuel 
-canisters/rods when they dock but I'm not sure if possible. And it only works for the "capital ships". Generators can be
+from the outfit store. I wanted to add a feature where the game asks the player to automatically replenish the missing fuel 
+canisters/rods when they dock but I'm not sure if it's possible. And it only works for the "capital ships". Generators can be
 installed in the other ships in the fleet, but they won't lose any fuel. My other mod adds it's own "Nuclear Reactors" which
 don't require fuel themselves, instead can produce "Nuclear Byproduct" that you can transport to certain locations 
-provided by the job that I planned to add. I don't remember if it's working currently and I would recommend not to use
+provided by the job that I planned to add. I don't remember if it's working currently and I would recommend not to use the 2
 mods at the same time since, certain contents might have the same name.
 
 -----NUCLEAR WASTE MANAGEMENT & AUTOMATIC MISSILE PRODUCTION-----
