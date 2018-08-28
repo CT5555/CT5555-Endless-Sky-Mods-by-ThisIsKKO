@@ -27,13 +27,13 @@ Ships.txt and the other factions txt files add the "Generator Installment Allowa
 in case anyone wants to go for that direction. Sales add the introduced outfits to certain points to be sold.
 
 --NOTES--
-In it's most basic form, the generators only produce heat and the fuels have the power generation. Without generators, 
+In its most basic form, the generators only produce heat and the fuels have the power generation. Without generators, 
 you can't install the fuels and I made the power generation values greater than the vanilla ones since otherwise you 
 would have no reason to install them to pay for the fuels. Since generators will consume fuels, every time you land
 and take off, your power generation over time will be crippled and you need to manually purchase the corresponding fuels
 from the outfit store. I wanted to add a feature where the game asks the player to automatically replenish the missing fuel 
 canisters/rods when they dock but I'm not sure if it's possible. And it only works for the "capital ships". Generators can be
-installed in the other ships in the fleet, but they won't lose any fuel. My other mod adds it's own "Nuclear Reactors" which
+installed in the other ships in the fleet, but they won't lose any fuel. My other mod adds its own "Nuclear Reactors" which
 don't require fuel themselves, instead can produce "Nuclear Byproduct" that you can transport to certain locations 
 provided by the job that I planned to add. I don't remember if it's working currently and I would recommend not to use the 2
 mods at the same time since, certain contents might have the same name.
@@ -42,7 +42,7 @@ mods at the same time since, certain contents might have the same name.
 
 --MISSILES.TXT--
 Events are included in the same file with the outfits. It works in the same as the Fuel Consuming Generator mods' generators 
-but with an extra. Every missile assembler consumes energy and produces heat has it's required raw materials that can be purchased as outfits and in return, they add missiles to your ships. Even though the events require only a certain type of raw materials without a certain count to be activated (which means even if you have only 1 Sidewinder Raw Parts, it's gonna kick in), in order to add the missiles, it takes away a number of raw parts more than 1. As I don't fully remember, it may not even take or add anything. If so, 
+but with an extra. Every missile assembler consumes energy and produces heat has its required raw materials that can be purchased as outfits and in return, they add missiles to your ships. Even though the events require only a certain type of raw materials without a certain count to be activated (which means even if you have only 1 Sidewinder Raw Parts, it's gonna kick in), in order to add the missiles, it takes away a number of raw parts more than 1. As I don't fully remember, it may not even take or add anything. If so, 
 I recommend reducing the raws taken to -1. It only works for the "capital ship". Other ships won't get their ammunition replenished
 or raws taken away. The reason that I made this mod in the first place is that rather than buying missiles, this option ought to 
 be more economic and you can sell those missiles for conceviable profits over the costs of the raw materials.
