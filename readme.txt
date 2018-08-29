@@ -23,7 +23,7 @@ certain cooling systems that run on coolants which works with the same principle
 
 
 --SHIPS.TXT/SALES.TXT--
-Ships.txt and the other factions txt files add the "Generator Installment Allowance" outfit into every vanilla ship in the game 
+Ships.txt and the other factions' txt files add the "Generator Installment Allowance" outfit into every vanilla ship in the game 
 in case anyone wants to go for that direction. Sales add the introduced outfits to certain points to be sold.
 
 --NOTES--
