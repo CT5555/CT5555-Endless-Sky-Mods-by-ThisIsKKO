@@ -36,7 +36,7 @@ canisters/rods when they dock but I'm not sure if it's possible. And it only wor
 installed in the other ships in the fleet, but they won't lose any fuel. My other mod adds its own "Nuclear Reactors" which
 don't require fuel themselves, instead can produce "Nuclear Byproduct" that you can transport to certain locations 
 provided by the job that I planned to add. I don't remember if it's working currently and I would recommend not to use the 2
-mods at the same time since, certain contents might have the same name.
+mods at the same time, since certain contents might have the same name and cause clashes.
 
 -----NUCLEAR WASTE MANAGEMENT & AUTOMATIC MISSILE PRODUCTION-----
 
