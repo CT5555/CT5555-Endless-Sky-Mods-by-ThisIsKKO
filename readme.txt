@@ -23,8 +23,8 @@ certain cooling systems that run on coolants which works with the same principle
 
 
 --SHIPS.TXT/SALES.TXT--
-Ships.txt and the other factions' txt files add the "Generator Installment Allowance" outfit into every vanilla ship in the game 
-in case anyone wants to go for that direction. Sales add the introduced outfits to certain points to be sold.
+Ships.txt and the other factions' .txt files add the "Generator Installment Allowance" outfit into every vanilla ship in the game 
+in case anyone wants to go for that direction. Sales.txt adds the introduced outfits to certain points to be sold.
 
 --NOTES--
 In its most basic form, the generators only produce heat and the fuels have the power generation. Without generators, 
