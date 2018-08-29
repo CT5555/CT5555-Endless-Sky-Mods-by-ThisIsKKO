@@ -42,7 +42,7 @@ mods at the same time, since certain contents might have the same name and cause
 
 --MISSILES.TXT--
 Events are included in the same file with the outfits. It works in the same way as the Fuel Consuming Generator mods' generators 
-but with an extra. Every missile assembler consumes energy and produces heat has its required raw materials that can be purchased as outfits and in return, they add missiles to your ships. Even though the events require only a certain type of raw materials without a certain count to be activated (which means even if you have only 1 Sidewinder Raw Parts, it's gonna kick in), in order to add the missiles, it takes away a number of raw parts more than 1. As I don't fully remember, it may not even take or add anything. If so, 
+but with an extra. Every missile assembler consumes energy and produces heat as well as has its own required raw materials that can be purchased as outfits and in return, they add missiles to your ships. Even though the events require only a certain type of raw materials without a certain count to be activated (which means even if you have only 1 Sidewinder Raw Parts, it's gonna kick in), in order to add the missiles, it takes away a number of raw parts more than 1. As I don't fully remember, it may not even take or add anything. If so, 
 I recommend reducing the raws taken to -1. It only works for the "capital ship". Other ships won't get their ammunition replenished
 or raws taken away. The reason that I made this mod in the first place is that rather than buying missiles, this option ought to 
 be more economic and you can sell those missiles for conceviable profits over the costs of the raw materials.
