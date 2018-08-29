@@ -49,7 +49,7 @@ be more economic and you can sell those missiles for conceviable profits over th
 
 
 --NUCLEAR.TXT--
-Events are included in the same file with the outfits. Nuclear Waste Management's working method is the same as others. Fission Reactors don't require any fuel to consume and just generate "Nuclear Byproducts" which you would be able to transport to certain points provided by the jobs you've accepted to get nuclear warheads. That would probably be sort of an illegal job which would enable you to assemble those warheads into nukes. However I haven't added the anything about Nuclear Warhead other than itself as an outfit, and the only job I added pays you credits for the delivery instead of giving warheads. It's been a while since I tried it, I don't remember if the mission worked. However the waste generation works quite well.
+Events are included in the same file with the outfits. Nuclear Waste Management's working method is the same as others. Fission Reactors don't require any fuel to consume and just generate "Nuclear Byproducts" which you would be able to transport to certain points provided by the jobs you've accepted to get nuclear warheads. That would probably be sort of an illegal job later then which would enable you to assemble those warheads into nukes. However I haven't added anything about nuclear warheads other than itself as an outfit, and the only job I added pays you credits for the delivery instead of giving warheads. It's been a while since I tried it, I don't remember if the mission worked. However the waste generation works quite well.
 
 
 --SALES.TXT/VARIANTS.TXT--
